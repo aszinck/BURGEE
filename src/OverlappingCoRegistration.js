@@ -32,9 +32,9 @@ var allowedTimeSpan = 1;
 
 var outlierCriteria = 150; //meters
 
-var REMA = ee.ImageCollection("users/azcryosphere/DotsonIceShelf/CorrectedREMA_lat60_1month").filterBounds(AOI).filterDate(startStrip,endStrip).select(['elevation']);
+var REMA = ee.ImageCollection("users/azcryosphere/DotsonIceShelf/CorrectedREMA_lat60_1month").filterDate(startStrip,endStrip).select(['elevation']);
 
-var REMAint = ee.ImageCollection("users/azcryosphere/DotsonIceShelf/CorrectedREMA_lat60_1month").filterBounds(AOI).filterDate(startEpoch,endEpoch).select(['elevation']);
+var REMAint = ee.ImageCollection("users/azcryosphere/DotsonIceShelf/CorrectedREMA_lat60_1month").filterDate(startEpoch,endEpoch).select(['elevation']);
 
 
 ////////////////////////////////////////////////////////////////////
