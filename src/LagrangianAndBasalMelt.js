@@ -256,7 +256,7 @@ var hugeFunction = function(startYear,dt){
 
 
 
-  var k3 = emptyLagr.select(['k3']).mean(); // mean(div(v)*(h-d))
+  var k3 = emptyLagr.select(['k3']).mean().divide(120); // mean(div(v)*(h-d))
 
   // (h-h_f)*div(V)
   var k0 = lagrangian.subtract(facChange); // Dh/Dt - Dhf/Dt
