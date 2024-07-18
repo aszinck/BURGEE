@@ -18,5 +18,7 @@ The Dotson/ folder contains the scripts to
 
 The Dotson/modules/ folder contains two scripts with functions used for the co-registration and the Eulerian elevation change, respectively.
 
+The V2/ folder contains the code used in Zinck et al, 2024 (submitted)
+
 # How to apply BURGEE
 All code is provided in javascript which can be copy-pasted and run on the Google Earth Engine
