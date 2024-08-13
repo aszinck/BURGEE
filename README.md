@@ -20,5 +20,17 @@ The Dotson/modules/ folder contains two scripts with functions used for the co-r
 
 The V2/ folder contains the code used in Zinck et al, 2024 (submitted)
 
-# How to apply BURGEE
-All code is provided in javascript which can be copy-pasted and run on the Google Earth Engine
+# How to apply BURGEE V2
+All code is provided in javascript which can be copy-pasted and run on the Google Earth Engine directly
+
+1. Perform the intitial co-registration (V2/CoRegistration)
+2. Perform the second co-registration (V2/overlapCoRegistration)
+3. Add a band to all strips with firn air content (V2/addFACband)
+4. Perform the lagrangian displacement (V2/lagrangianDisplacementOfStrips)
+5. Calculate the basal melt rate (V2/basalMeltRate)
+
+Local GEE paths should be adjusted for saving and loading assets in-between scripts. All scripts are set to focus on the area around Totten Ice Shelf as a demo and can be moved to other ice shelves as explained in comments in the code.
+
+The computational time depends on the amount of REMA strips and the size of the ice shelf/area. It is not possible to run all years in one go in step 1,2 and 4 above due to the computational limit on the GEE, and the allowed time window can therefore be used to adjust this. Running all of the above scripts for Totten only will take around a week in total on the GEE, with the lagrangian displacement being the bottleneck. 
+
+
