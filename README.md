@@ -1,7 +1,9 @@
 Created by Ann-Sofie P. Zinck (a.p.zinck@tudelft.nl | @aszinck)
 
 # Intro to BURGEE
-This repository contains the code for the Basal melt rates Using Rema and Google Earth Engine (BURGEE) method. This is a method to obtain basal melt rates at high spatial resolution and is accompanied with a paper to be submitted soon.
+This repository contains the code for the Basal melt rates Using Rema and Google Earth Engine (BURGEE) method. This is a method to obtain basal melt rates at high spatial resolution.
+
+I highly recommend new uses to Google Earth Enigne to first have a look at [Google's Get Started with Earth Engine page](https://developers.google.com/earth-engine/guides/getstarted).
 
 # About BURGEE
 BURGEE creates high resolution co-registered DEMs using the Reference Elevation Model of Antarctica (REMA) in combination with CryoSat-2. The DEMs can be used to to calculate surface elevation changes in both a Eulerian and Lagrangian framework, from which the latter is used to obtain high resolution basal melt rates. 
@@ -21,7 +23,7 @@ The Dotson/modules/ folder contains two scripts with functions used for the co-r
 The V2/ folder contains the code used in Zinck et al, 2024 (submitted)
 
 # How to apply BURGEE V2
-All code is provided in javascript which can be copy-pasted and run on the Google Earth Engine directly
+All code is provided in javascript which can be copy-pasted and run on the Google Earth Engine directly or just be clicking the links below
 
 1. Perform the intitial co-registration (V2/CoRegistration)
 2. Perform the second co-registration (V2/overlapCoRegistration)
